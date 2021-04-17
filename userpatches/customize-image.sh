@@ -1,6 +1,8 @@
 #!/bin/bash
 #对镜像进行一些定制操作
 
+#设置默认密码
+echo root:1234 | chpasswd
 #删除登录修改密码的选项
 rm -f /root/.not_logged_in_yet
 #删除时区
