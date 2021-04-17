@@ -32,3 +32,8 @@ apt-get -y install python3-pip
 
 #清除安装包
 apt-get clean
+
+#关闭自动休眠,长时间不登录导致无法连上ssh,不知道是否有效，有待观察
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
+
